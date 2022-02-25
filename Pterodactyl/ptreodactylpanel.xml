@@ -31,7 +31,7 @@ Stop settling for less. Make game servers a first class citizen on your platform
   <Config Name="PteroLogs" Target="/app/storage/logs" Default="/mnt/user/pteropanel/nginx" Mode="rw" Description="All the logs of pterodactyl panel." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pteropanel/nginx</Config>
   <Config Name="DatabaseHost" Target="DB_HOST" Default="" Mode="" Description="Ip of your database" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DatabasePort" Target="DB_PORT" Default="3306" Mode="" Description="The port of your database" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="DatabaseName" Target="MYSQL_DATABASE" Default="pterodb" Mode="" Description="The name of your database." Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="DatabaseUser" Target="MYSQL_USER" Default="PteroUser" Mode="" Description="The name of the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DatabaseName" Target="DB_DATABASE" Default="pterodb" Mode="" Description="The name of your database." Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DatabaseUser" Target="DB_USERNAME" Default="PteroUser" Mode="" Description="The name of the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DatabasePassword" Target="DB_PASSWORD" Default="changeme" Mode="" Description="The database password for the user." Type="Variable" Display="always" Required="true" Mask="true"/>
 </Container>
