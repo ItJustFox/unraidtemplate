@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
-  <Support>nothing here for now !</Support>
+  <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
   <Project>https://github.com/bpatrik/pigallery2</Project>
   <Overview>Homepage: http://bpatrik.github.io/pigallery2/&#xD;
 This is a fast (like faster than your PC fast) directory-first photo gallery website, optimised for running on low resource servers (especially on raspberry pi).&#xD;
