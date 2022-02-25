@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>PiGallery2</Name>
   <Repository>bpatrik/pigallery2:latest-debian-buster</Repository>
-  <Registry>https://hub.docker.com/r/bpatrik/pigallery2/tags/</Registry>
+  <Registry>https://hub.docker.com/r/bpatrik/pigallery2</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
