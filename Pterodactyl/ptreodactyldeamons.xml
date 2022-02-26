@@ -31,6 +31,7 @@ Stop settling for less. Make game servers a first class citizen on your platform
   <Config Name="DeamonsLib" Target="/mnt/user/appdata/pterodactyldeamons/lib" Default="/mnt/user/appdata/pterodactyldeamons/lib" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pterodactyldeamons/lib</Config>
   <Config Name="DeamonsLogs" Target="/var/log/pterodactyl/" Default="/mnt/user/appdata/pterodactyldeamons/logs" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pterodactyldeamons/logs</Config>
   <Config Name="DeamonsEtc" Target="/etc/pterodactyl/" Default="/mnt/user/appdata/pterodactyldeamons/etc" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/pterodactyldeamons/etc</Config>
+  <Config Name="DeamonsTmp" Target="/tmp/pterodactyl" Default="/tmp/pterodactyl" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/tmp/pterodactyl</Config>  
   <Config Name="DeamonsLetsenscrypt" Target="/etc/letsencrypt/" Default="" Mode="rw" Description="Mount your SSL key.&#13;&#10;If nginx mount your config.&#13;&#10;if reverseproxy, mount the key." Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="DeamonsDockerLink" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="DO NOT CHANGE THAT !!!!" Type="Path" Display="advanced-hide" Required="true" Mask="false">/var/run/docker.sock</Config>
 </Container>
