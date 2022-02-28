@@ -33,5 +33,5 @@ AFTER First launch go to your /mnt/user/appdata/phantomboto/ create a files name
   <Config Name="BotName" Target="PHANTOMBOT_USER" Default="" Mode="" Description="The name of your bot on twitch" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="BotKey" Target="PHANTOMBOT_OAUTH" Default="" Mode="" Description="The keyAPI of the bot grab it here https://phantombot.github.io/PhantomBot/oauth/" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="ChannelName" Target="PHANTOMBOT_CHANNEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="ChannelAPI" Target="PHANTOMBOT_APIOAUTH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="ChannelAPI" Target="PHANTOMBOT_APIOAUTH" Default="" Mode="" Description="Take your aouth key at https://twitchapps.com/tmi/ and past only the part after the :" Type="Variable" Display="always" Required="true" Mask="true"/>
 </Container>
