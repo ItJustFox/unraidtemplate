@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>PhantomBot</Name>
-  <Repository>ghcr.io/phantombot/phantombot</Repository>
+  <Name>PhantomBot-1</Name>
+  <Repository>ghcr.io/phantombot/phantombot:latest</Repository>
   <Registry>https://hub.docker.com/r/gmt2001/phantombot-stable</Registry>
   <Network>br0</Network>
-  <MyIP/>
+  <MyIP>192.168.0.94</MyIP>
   <Shell>sh</Shell>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
   <Project>https://github.com/phantombot/PhantomBot</Project>
   <Overview>PhantomBot is a Twitch chat bot powered by Java. PhantomBot has many modern features out of the box such as a built-in webpanel, enhanced moderation, games, a point system, raffles, custom commands, a music player, and more. PhantomBot can also be integrated with many services such as Discord, Twitter, TipeeeStream, StreamLabs and StreamElements!&#xD;
@@ -14,23 +14,24 @@
 Additional functionality is enabled through the use of third-party modules.&#xD;
 &#xD;
 AFTER First launch go to your /mnt/user/appdata/phantomboto/ create a files named botlogin.txt relaunch the docker and after that remove everything under HTTPS</Overview>
-  <Category>GameServers: Status:Stable</Category>
+  <Category>GameServers:</Category>
   <WebUI>http://[IP]:[PORT:25000]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/master/PhantomBot/phantombot.xml</TemplateURL>
   <Icon>https://phantombot.github.io/PhantomBot/common/images/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1646022659</DateInstalled>
+  <DateInstalled>1646068961</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="ports" Target="" Default="25000" Mode="tcp" Description="Basique Port for PhantomBot" Type="Port" Display="always" Required="true" Mask="false">25000</Config>
-  <Config Name="Host Path 1" Target="/opt/PhantomBot_data/config" Default="" Mode="rw" Description="Configuration path of phantombot" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/phantomboto/</Config>
+  <Config Name="ports" Target="25000" Default="2500" Mode="tcp" Description="Basique Port for PhantomBot" Type="Port" Display="always" Required="true" Mask="false">25000</Config>
+  <Config Name="Host Path 1" Target="/opt/PhantomBot/config" Default="" Mode="rw" Description="Configuration path of phantombot" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/phantomboto/</Config>
   <Config Name="UserPanel" Target="PHANTOMBOT_PANELUSER" Default="Admin" Mode="" Description="The user for the webpanel" Type="Variable" Display="always" Required="true" Mask="false">Admin</Config>
   <Config Name="UserPassword" Target="PHANTOMBOT_PANELPASSWORD" Default="changeme" Mode="" Description="password for the User in the Panel" Type="Variable" Display="always" Required="true" Mask="true">changeme</Config>
-  <Config Name="HTTPS" Target="PHANTOMBOT_USEHTTPS" Default="true|false" Mode="" Description="Did you use HTTPS for connect in the panel ?" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
-  <Config Name="BotToken" Target="PHANTOMBOT_USER" Default="" Mode="" Description="Twitch bot user OAuth token (https://phantombot.github.io/PhantomBot/oauth/)" Type="Variable" Display="always" Required="true" Mask="true"/>
-  <Config Name="TwitchUserToken" Target="PHANTOMBOT_OAUTH" Default="" Mode="" Description="Twitch caster channel OAuth token (https://phantombot.github.io/PhantomBot/oauth/)" Type="Variable" Display="always" Required="true" Mask="true"/>
-  <Config Name="TwitchUserName" Target="PHANTOMBOT_APIOAUTH" Default="" Mode="" Description="Twitch caster channel" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="HTTPS" Target="PHANTOMBOT_USEHTTPS" Default="true|false" Mode="" Description="Did you use HTTPS for connect in the panel ?" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="BotName" Target="PHANTOMBOT_USER" Default="" Mode="" Description="The name of your bot on twitch" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="BotKey" Target="PHANTOMBOT_OAUTH" Default="" Mode="" Description="The keyAPI of the bot grab it here https://phantombot.github.io/PhantomBot/oauth/" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="ChannelName" Target="PHANTOMBOT_CHANNEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="ChannelAPI" Target="PHANTOMBOT_APIOAUTH" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
 </Container>
