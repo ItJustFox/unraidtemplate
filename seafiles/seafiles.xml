@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>SeaFiles</Name>
-  <Repository>seafileltd/seafile-mc:latest</Repository>
+  <Repository>seafileltd/seafile:latest</Repository>
   <Registry>https://hub.docker.com/r/seafileltd/seafile</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -17,17 +17,13 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1646229458</DateInstalled>
+  <DateInstalled>1646230631</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Port" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Port" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">98</Config>
+  <Config Name="UnraidIP" Target="SEAFILE_SERVER_HOSTNAME" Default="" Mode="" Description="Set the IP of your unraid. Please" Type="Variable" Display="always" Required="true" Mask="false">192.168.0.59</Config>
+  <Config Name="DataPath" Target="/shared" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/seafiles</Config>
   <Config Name="AdminEmail" Target="SEAFILE_ADMIN_EMAIL" Default="admin@test.fr" Mode="" Description="Specifies Seafile admin user, default is 'admin@test.fr'." Type="Variable" Display="always" Required="true" Mask="false">admin@test.fr</Config>
   <Config Name="AdminPassword" Target="SEAFILE_ADMIN_PASSWORD" Default="changeme" Mode="" Description="Specifies Seafile admin password, default is 'changeme'." Type="Variable" Display="always" Required="true" Mask="true">changeme</Config>
-  <Config Name="DataPath" Target="/shared" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/seafiles</Config>
-  <Config Name="DatabaseHost" Target="DB_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="DatabasePort" Target="DB_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
-  <Config Name="DatabaseName" Target="DB_DATABASE" Default="seafiles" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">seafiles</Config>
-  <Config Name="DatabaseUser" Target="DB_USERNAME" Default="SeafilesUser" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">SeafilesUser</Config>
-  <Config Name="DatabaseUserPassword" Target="DB_PASSWORD" Default="changeme" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">changeme</Config>
 </Container>
