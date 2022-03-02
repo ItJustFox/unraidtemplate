@@ -159,6 +159,9 @@ if [ -d "/var/www/pterodactyl" ]; then
   elif [ -d "/var/www/ptero" ]; then
     PTERO_INSTALL=true
     PTERO="/var/www/ptero"
+  elif [ -d "/app" ]; then
+    PTERO_INSTALL=true
+    PTERO="/app"
   else
     PTERO_INSTALL=false
 fi
