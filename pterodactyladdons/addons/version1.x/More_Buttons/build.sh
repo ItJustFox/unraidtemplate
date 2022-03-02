@@ -154,6 +154,18 @@ if [ -f "$CONFIG_FILE" ]; then
       echo -e "* ${GREEN}Compatible Version!${reset}"
       print_brake 23
       echo
+    elif [ "$PANEL_VERSION" == "latest" ]; then
+      echo
+      print_brake 23
+      echo -e "* ${GREEN}Compatible Version!${reset}"
+      print_brake 23
+      echo
+    elif [ "$PANEL_VERSION" == "develop" ]; then
+      echo
+      print_brake 23
+      echo -e "* ${GREEN}Compatible Version!${reset}"
+      print_brake 23
+      echo
     else
       echo
       print_brake 24
