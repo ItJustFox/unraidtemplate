@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>SeaFiles</Name>
+  <Name>SeaFile</Name>
   <Repository>seafileltd/seafile:latest</Repository>
   <Registry>https://hub.docker.com/r/seafileltd/seafile</Registry>
   <Network>bridge</Network>
