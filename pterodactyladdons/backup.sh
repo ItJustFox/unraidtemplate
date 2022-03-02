@@ -14,7 +14,7 @@ set -e
 
 #### Fixed Variables ####
 
-SUPPORT_LINK="https://discord.gg/buDBbSGJmQ"
+SUPPORT_LINK="https://discord.gg/CUNEGx2Jaq"
 
 #### Update Variables ####
 
