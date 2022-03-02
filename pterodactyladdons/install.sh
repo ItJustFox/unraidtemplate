@@ -78,39 +78,39 @@ print_brake 70
 echo
 
 Backup() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/backup.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/backup.sh)
 }
 
 More_Buttons() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/More_Buttons/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/More_Buttons/build.sh)
 }
 
 More_Server_Info() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/More_Server_Info/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/More_Server_Info/build.sh)
 }
 
 Server_Router_Icons() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/Server_Router_Icons/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/Server_Router_Icons/build.sh)
 }
 
 PMA_Button_NavBar() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/PMA_Button_NavBar/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/PMA_Button_NavBar/build.sh)
 }
 
 PMA_Button_Database_Tab() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/PMA_Button_Database_Tab/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/PMA_Button_Database_Tab/build.sh)
 }
 
 MC_Paste() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/MC_Paste/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/MC_Paste/build.sh)
 }
 
 Bigger_Console() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/Bigger_Console/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/Bigger_Console/build.sh)
 }
 
 Files_In_Editor() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoAddons/${SCRIPT_VERSION}/addons/version1.x/Files_In_Editor/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/pterodactyladdons/addons/version1.x/Files_In_Editor/build.sh)
 }
 
 
