@@ -16,6 +16,9 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
+  <DateInstalled>1646230631</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Requires>A DataBase</Requires>
   <Config Name="WebUI Port" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
   <Config Name="DatabaseHost" Target="FR_DB_HOST" Default="127.0.0.1" Mode="" Description="Set the database IP here" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
