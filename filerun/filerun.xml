@@ -24,8 +24,8 @@
   <Config Name="DatabaseHost" Target="FR_DB_HOST" Default="127.0.0.1" Mode="" Description="Set the database IP here" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
   <Config Name="DatabasePort" Target="FR_DB_PORT" Default="3306" Mode="" Description="Set the port of your database here" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
   <Config Name="DatabaseName" Target="FR_DB_NAME" Default="" Mode="" Description="Set the Database Name here" Type="Variable" Display="always" Required="true" Mask="false">image</Config>
-  <Config Name="Database User" Target="FR_DB_USER" Default="filerun" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">image</Config>
-  <Config Name="Database Password" Target="FR_DB_PASS" Default="changeme" Mode="" Description="Set the Database Password here" Type="Variable" Display="always" Required="true" Mask="true">changeme</Config>
+  <Config Name="DatabaseUser" Target="FR_DB_USER" Default="filerun" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">image</Config>
+  <Config Name="DatabasePassword" Target="FR_DB_PASS" Default="changeme" Mode="" Description="Set the Database Password here" Type="Variable" Display="always" Required="true" Mask="true">changeme</Config>
   <Config Name="AppData" Target="/var/www/html" Default="/mnt/user/appdata/FilesRun/" Mode="rw" Description="Set the appdata path part here" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/FilesRun/</Config>
   <Config Name="UserFile" Target="/user-files/" Default="/mnt/user/FileRunData/" Mode="rw" Description="Set where will be stock all image ect..." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/FileRunData/</Config>
 </Container>
