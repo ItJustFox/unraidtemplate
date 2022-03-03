@@ -7,16 +7,17 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Project>
+  <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
+  <Project>https://github.com/filerun</Project>
   <Overview>FileRun is a self-hosted Google Drive alternative. It is a full featured web based file manager with an easy to use user interface. It is great for managing your photo, movie, audio collection, or sharing files with your family and friends.</Overview>
-  <Category>Cloud: MediaApp:Video MediaApp:Music MediaApp:Photos MediaApp:Other MediaServer:Video MediaServer:Music MediaServer:Photos MediaServer:Other Network:Web Status:Stable</Category>
+  <Category>Cloud: MediaApp:Video MediaApp:Music MediaApp:Photos MediaApp:Other MediaServer:Video MediaServer:Music MediaServer:Photos MediaServer:Other Network:Web</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/master/filerun/filerun.xml</TemplateURL>
   <Icon>https://www.filerun.com/images/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1646230631</DateInstalled>
+  <DateInstalled>1646309219</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires>A DataBase</Requires>
