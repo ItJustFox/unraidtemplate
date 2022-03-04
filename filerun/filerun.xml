@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Filerun-ofi</Name>
   <Repository>filerun/filerun:latest</Repository>
-  <Registry>https://hub.docker.com/r/afian/filerun</Registry>
+  <Registry>https://hub.docker.com/r/filerun/filerun</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
