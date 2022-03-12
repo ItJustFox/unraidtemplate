@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PiGallery2-Beta</Name>
+  <Repository>bpatrik/pigallery2:nightly-debian-buster</Repository>
+  <Registry>https://hub.docker.com/r/bpatrik/pigallery2/tags/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>nothing here for now !</Support>
+  <Project>https://github.com/bpatrik/pigallery2</Project>
+  <Overview>Homepage: http://bpatrik.github.io/pigallery2/&#xD;
+This is a fast (like faster than your PC fast) directory-first photo gallery website, optimised for running on low resource servers (especially on raspberry pi).&#xD;
+&#xD;
+&#x2714;&#xFE0F; Strenghts:&#xD;
+&#x26A1; Fast, like for real&#xD;
+&#x2714;&#xFE0F; Simple. Point to your photos folder and a temp folder and you are good to go&#xD;
+&#xD;
+&#x26D4; Weakness:&#xD;
+&#x1F625; Its simple. Shows what you have that's it. No gallery changes (photo delete, rotate, enhance, tag, organize, etc), your gallery folder is read-only.&#xD;
+&#xD;
+Live Demo @ heroku: https://pigallery2.herokuapp.com/&#xD;
+BasicLogin.&#xD;
+User: Admin&#xD;
+Password: Admin</Overview>
+  <Category>Cloud: MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos Status:Beta</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://bpatrik.github.io/pigallery2/assets/icon_inv.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1647124524</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Config" Target="/app/data/config" Default="/mnt/user/appdata/PiGalery/config" Mode="rw" Description="Stock the config set in the AdminPanel.&#13;&#10;(Can be change with file.)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/PiGallery2/config</Config>
+  <Config Name="Image" Target="/app/data/images/" Default="" Mode="ro" Description="Where is stock in the docker all the image." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/PiGallery2Data/</Config>
+  <Config Name="Tmp" Target="/app/data/tmp" Default="/mnt/user/appdata/PiGalery/tpm" Mode="rw" Description="Where is stock all the temporaru file.&#13;&#10;Such has thumbnails and other." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/PiGallery2/tmp</Config>
+  <Config Name="db" Target="/app/data/db" Default="/mnt/user/appdata/PiGalery/db" Mode="rw" Description="The dataBase if set to sql and not using mysql.&#13;&#10;(Keep it even if you use the mysql.)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/PiGallery2/db</Config>
+</Container>
