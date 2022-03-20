@@ -9,6 +9,14 @@
   <Privileged>true</Privileged>
   <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
   <Project>https://github.com/bpatrik/pigallery2</Project>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>The "default image".</TagDescription>
+  </Branch>
+  <Branch>
+    <Tag>nightly-debian-buster</Tag>
+    <TagDescription>The BetaVersion, more options but less stability.</TagDescription>
+  </Branch>
   <Overview>Homepage: http://bpatrik.github.io/pigallery2/&#xD;
 This is a fast (like faster than your PC fast) directory-first photo gallery website, optimised for running on low resource servers (especially on raspberry pi).&#xD;
 &#xD;
