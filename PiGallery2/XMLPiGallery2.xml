@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>PiGallery2</Name>
-  <Repository>bpatrik/pigallery2:latest-debian-buster</Repository>
+  <Repository>bpatrik/pigallery2</Repository>
   <Registry>https://hub.docker.com/r/bpatrik/pigallery2</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -10,7 +10,7 @@
   <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
   <Project>https://github.com/bpatrik/pigallery2</Project>
   <Branch>
-    <Tag>latest</Tag>
+    <Tag>latest-debian-buster</Tag>
     <TagDescription>The "default image".</TagDescription>
   </Branch>
   <Branch>
