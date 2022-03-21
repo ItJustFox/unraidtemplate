@@ -11,7 +11,7 @@
   <Project>https://github.com/bpatrik/pigallery2</Project>
   <Branch>
     <Tag>latest-debian-buster</Tag>
-    <TagDescription>The "default image".</TagDescription>
+    <TagDescription>The default image. Use this one and not the one above if you need the real latest.</TagDescription>
   </Branch>
   <Branch>
     <Tag>nightly-debian-buster</Tag>
