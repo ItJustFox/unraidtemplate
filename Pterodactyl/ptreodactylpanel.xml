@@ -36,4 +36,6 @@ All the setups requiried is on the support area (Discord or Forum)</Overview>
   <Config Name="DatabaseName" Target="DB_DATABASE" Default="pterodb" Mode="" Description="The name of your database." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DatabaseUser" Target="DB_USERNAME" Default="PteroUser" Mode="" Description="The name of the database user" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DatabasePassword" Target="DB_PASSWORD" Default="changeme" Mode="" Description="The database password for the user." Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="TimeZone" Target="APP_TIMEZONE" Default="Europe/Paris" Mode="" Description="http://php.net/manual/en/timezones.php&#13;&#10;See here to set your timezone" Type="Variable" Display="always" Required="true" Mask="false">Europe/Paris</Config>
+  <Config Name="UrlOfPanel" Target="APP_URL" Default="https://example.com" Mode="" Description="Set your Url of the panel, used in mail." Type="Variable" Display="always" Required="true" Mask="false">https://example.com</Config>
 </Container>
