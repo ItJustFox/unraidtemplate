@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Pterodactyl-Panel</Name>
-  <Repository>ghcr.io/pterodactyl/panel:latest</Repository>
+  <Repository>ghcr.io/pterodactyl/panel</Repository>
   <Registry/>
   <Network>bridge</Network>
   <MyIP/>
@@ -9,6 +9,10 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
   <Project>https://github.com/pterodactyl</Project>
+  <Branch>
+    <Tag>v1.7.0</Tag>
+    <TagDescription>The old version, less wiev and version but no need of Redis if you want the latest you it but need redis.</TagDescription>
+  </Branch>
   <Overview>Pterodactyl&#xAE; is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
 &#xD;
 Stop settling for less. Make game servers a first class citizen on your platform.&#xD;
