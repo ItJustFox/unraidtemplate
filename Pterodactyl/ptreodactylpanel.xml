@@ -30,7 +30,8 @@ WARNINGS !!! The Latest Version requir a Redis Install on your Server !!! WARNIN
   <DateInstalled>1645802152</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>Pterodactyl-Deamons.</Requires>
+  <Requires>Pterodactyl-Deamons.&#xD;
+  Redis server. (above V1.7.0)</Requires>
   <Config Name="WebHttp" Target="80" Default="80" Mode="tcp" Description="Port Http for the web serveur" Type="Port" Display="always" Required="true" Mask="false">80</Config>
   <Config Name="WebHttps" Target="443" Default="443" Mode="tcp" Description="Port Https for the web serveur " Type="Port" Display="always" Required="true" Mask="false">443</Config>
   <Config Name="PteroVar" Target="/app/var" Default="/mnt/user/appdata/pteropanel/var" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pteropanel/var</Config>
