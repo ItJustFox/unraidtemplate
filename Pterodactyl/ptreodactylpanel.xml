@@ -36,7 +36,6 @@ WARNINGS !!! The Latest Version requir a Redis Install on your Server !!! WARNIN
   <Config Name="WebHttps" Target="443" Default="443" Mode="tcp" Description="Port Https for the web serveur " Type="Port" Display="always" Required="true" Mask="false">443</Config>
   <Config Name="PteroVar" Target="/app/var" Default="/mnt/user/appdata/pteropanel/var" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pteropanel/var</Config>
   <Config Name="PteroNginx" Target="/app/nginx/http.d/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pteropanel/nginx</Config>
-  <Config Name="PteroLetsenscrypt" Target="/etc/letsencrypt/" Default="" Mode="rw" Description="Mount your SSL key.&#13;&#10;If nginx mount your config.&#13;&#10;if reverseproxy, mount the key." Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="PteroLogs" Target="/app/storage/logs" Default="/mnt/user/appdata/pteropanel/logs" Mode="rw" Description="All the logs of pterodactyl panel." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pteropanel/logs</Config>
   <Config Name="DatabaseHost" Target="DB_HOST" Default="" Mode="" Description="Ip of your database" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DatabasePort" Target="DB_PORT" Default="3306" Mode="" Description="The port of your database" Type="Variable" Display="always" Required="true" Mask="false"/>
