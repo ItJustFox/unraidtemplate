@@ -24,7 +24,7 @@ Password:&#xD;
 changeme</Overview>
   <Category>Tools:Utilities Other: Network:Web Network:Proxy Network:Management Network:Other</Category>
   <WebUI>http://[IP]:[PORT:8181]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/mgutt/unraid-docker-templates/master/mgutt/Nginx-Proxy-Manager-Official.xml</TemplateURL>
+  <TemplateURL>https://github.com/ItJustFox/unraidtemplate/blob/main/Nginx-Proxy-Manager-CrowdSec/NPM-Crowdsec.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/Nginx-Proxy-Manager-CrowdSec/NginxCrowdsec.png</Icon>
   <ExtraParams>--memory=1G --no-healthcheck</ExtraParams>
   <PostArgs/>
