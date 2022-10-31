@@ -14,7 +14,7 @@
 This fork includes the OpenResty Crowdsec Bouncer&#xD;
 &#xD;
 Please see the crowdsec_support branch for the changes as&#xD;
-&#xD;
+For some who want use a Database instead of a Local sql, got to my post on the UnraidForum!&#xD;
 &#xD;
 Nginx Proxy Manager (NPM) allows adding proxy hosts through a password-protected multi-user WebUI. Add free Let's Encrypt SSL certificates to secure your web services. They are renewed by NPM automatically.&#xD;
 Default login:&#xD;
