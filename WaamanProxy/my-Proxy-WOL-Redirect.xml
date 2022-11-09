@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Proxy-WOL-Redirect</Name>
+  <Repository>waaman/proxy-wol-redirect:latest</Repository>
+  <Registry>https://hub.docker.com/repository/docker/waaman/proxy-wol-redirect</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://wiki.unraid.kalicorp.fr/en/home</Support>
+  <Project>https://github.com/waaman/Proxy-Wol-Redirect</Project>
+  <Overview>EN&#xD;
+This container must be run as "host" for sending magic packet.&#xD;
+&#xD;
+FR&#xD;
+Ce container doit tourner en mode "host" pour permettre l'envoi du magic packet WOL.&#xD;
+</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8565]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waaman/Proxy-Wol-Redirect/main/icone.ico</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1667995821</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="SERVER_PORT" Target="8565" Default="8565" Mode="" Description="EN: Listening port&#13;&#10;FR: Port d'&#xE9;coute" Type="Variable" Display="always" Required="false" Mask="false">8565</Config>
+  <Config Name="TIMEOUT" Target="TIMEOUT" Default="120" Mode="" Description="EN: Number of seconds before timeout&#13;&#10;FR: Nombre de secondes avant de timeout" Type="Variable" Display="always" Required="false" Mask="false">120</Config>
+  <Config Name="MAC" Target="MAC" Default="52:54:00:42:35:5C" Mode="" Description="EN: MAC Adress of the target machine to wake up&#13;&#10;FR: Adresse MAC de la machine &#xE0; r&#xE9;veiller" Type="Variable" Display="always" Required="false" Mask="false">52:54:00:42:35:5C</Config>
+  <Config Name="REDIRECT" Target="REDIRECT" Default="https://google.fr" Mode="" Description="EN: The redirect URL when machine is awake&#13;&#10;FR: URL de redirection une fois la machine r&#xE9;veill&#xE9;e&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false">https://google.fr</Config>
+</Container>
