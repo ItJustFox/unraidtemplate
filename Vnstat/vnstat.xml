@@ -17,7 +17,7 @@ See the official webpage or the GitHub repository for additional details and out
   <Category>Tools: Network:Other</Category>
   <WebUI>http://[IP]:8685/</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/Vnstat/logofix.png</Icon>
+  <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/Vnstat/logohtfix.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
