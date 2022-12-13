@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Vnstat</Name>
+  <Repository>vergoh/vnstat</Repository>
+  <Registry>https://hub.docker.com/r/vergoh/vnstat</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://wiki.unraid.kalifondation.fr/</Support>
+  <Project>https://github.com/vergoh/vnstat</Project>
+  <Overview>vnStat is a network traffic monitor that uses the network interface statistics provided by the kernel as information source. This means that vnStat won't actually be sniffing any traffic and also ensures light use of system resources regardless of network traffic rate.&#xD;
+&#xD;
+By default, traffic statistics are stored on a five minute level for the last 48 hours, on a hourly level for the last 4 days, on a daily level for the last 2 full months and on a yearly level forever. The data retention durations are fully user configurable. Total seen traffic and a top days listing is also provided.&#xD;
+&#xD;
+See the official webpage or the GitHub repository for additional details and output examples. An example of the included image output is also available.</Overview>
+  <Category>Tools: Network:Other</Category>
+  <WebUI>http://[IP]:8685/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/Vnstat/logofix.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1670914188</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUi Port" Target="HTTP_PORT" Default="8685" Mode="" Description="If you edit it, change the port in the WebUi above [AdvancedMode]" Type="Variable" Display="always" Required="true" Mask="false">8685</Config>
+  <Config Name="Stats" Target="/var/lib/vnstat" Default="/mnt/user/appdata/vnstat/" Mode="rw" Description="Required to avoid loosing data." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/vnstat/</Config>
+  <Config Name="localtime" Target="/etc/localtime" Default="/etc/localtime" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/etc/localtime</Config>
+  <Config Name="timezone" Target="/etc/timezone" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/etc/timezone</Config>
+</Container>
