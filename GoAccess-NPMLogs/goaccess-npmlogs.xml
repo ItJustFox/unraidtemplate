@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>GoAccess-NPMLogs</Name>
+  <Repository>xavierh/goaccess-for-nginxproxymanager</Repository>
+  <Registry>https://hub.docker.com/r/xavierh/goaccess-for-nginxproxymanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://wiki.unraid.kalifondation.fr/en/home</Support>
+  <Project>https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager</Project>
+  <Overview>(More clean Template)&#xD;
+GoAccess for Nginx Proxy Manager Logs&#xD;
+&#xD;
+This docker container should work out of the box with Nginx Proxy Manager to parse proxy logs. The goaccess.conf has been configured to only access proxy logs and archived proxy logs.&#xD;
+&#xD;
+Go to https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager for updates.</Overview>
+  <Category>Tools: Network:Proxy Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:7880]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/goaccess-for-nginxproxymanager/goan.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/resources/goaccess-npm.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1676991445</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Nginx Proxy Manager OR Traefik</Requires>
+  <Config Name="Http Port" Target="7880" Default="" Mode="tcp" Description="Port used for the WebUI" Type="Port" Display="always" Required="true" Mask="false">7880</Config>
+  <Config Name="NginxLog" Target="/opt/log" Default="/mnt/user/appdata/" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/NginxProxyManager-CrowdSec/log</Config>
+  <Config Name="LogType" Target="LOG_TYPE" Default="NPM|NPM+R|NPM+ALL|TRAEFIK" Mode="" Description="Choose the type of Log your using, check the GitHub or Wiki for more information." Type="Variable" Display="always" Required="true" Mask="false">NPM</Config>
+  <Config Name="SKIP_ARCHIVED_LOGS" Target="SKIP_ARCHIVED_LOGS" Default="false|true" Mode="" Description="(Optional) Defaults to False. Set to True to skip archived logs, i.e. proxy-host*.gz" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="BASIC_AUTH" Target="BASIC_AUTH" Default="true|false" Mode="" Description="(Optional) Defaults to False. Set to True to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly." Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="BASIC_AUTH_USERNAME" Target="BASIC_AUTH_USERNAME" Default="False" Mode="" Description="Optional) Requires BASIC_AUTH to bet set to True. Username for basic authentication." Type="Variable" Display="always" Required="false" Mask="false">User</Config>
+  <Config Name="BASIC_AUTH_PASSWORD" Target="BASIC_AUTH_PASSWORD" Default="False" Mode="" Description="(Optional) Requires BASIC_AUTH to bet set to True. Password for basic authentication." Type="Variable" Display="always" Required="false" Mask="true">Ch@ngeMe</Config>
+  <Config Name="EXCLUDE_IPS" Target="EXCLUDE_IPS" Default="" Mode="" Description="(Optional) IP Addresses or range of IPs delimited by comma refer to https://goaccess.io/man. For example: 192.168.0.1-192.168.0.100 or 127.0.0.1,192.168.0.1-192.168.0.100" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DEBUG" Target="DEBUG" Default="false|true" Mode="" Description="(Optional) HTML version of the running goaccess.conf wihtin the container" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+</Container>
