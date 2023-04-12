@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>TileServer-GL</Name>
+  <Repository>maptiler/tileserver-gl</Repository>
+  <Registry>https://hub.docker.com/r/maptiler/tileserver-gl</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://wiki.unraid.kalifondation.fr</Support>
+  <Project>https://github.com/maptiler/tileserver-gl</Project>
+  <Overview>Vector and raster maps with GL styles. Server-side rendering by MapLibre GL Native. Map tile server for MapLibre GL JS, Android, iOS, Leaflet, OpenLayers, GIS via WMTS, etc.&#xD;
+&#xD;
+Download vector tiles from OpenMapTiles.</Overview>
+  <Category>Cloud: HomeAutomation: Tools: Network:Web Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/tileserver-gl/tileserver-gl-logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs>--verbose</PostArgs>
+  <CPUset/>
+  <DateInstalled>1681308807</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUi" Target="8080" Default="8080" Mode="tcp" Description="Port used for the WebUI" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Configuration &amp;amp; Tiles" Target="/data/" Default="/mnt/user/appdata/TileServer-GL/" Mode="rw" Description="Config file for TileServer" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/TileServer-GL/</Config>
+</Container>
