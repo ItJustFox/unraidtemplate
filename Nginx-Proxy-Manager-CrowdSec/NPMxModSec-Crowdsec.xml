@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NPMxModSec-Crowdsec</Name>
+  <Repository>baudneo/nginx-proxy-manager:latest</Repository>
+  <Registry>https://hub.docker.com/r/baudneo/nginx-proxy-manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
+  <Project>https://github.com/baudneo/nginx-proxy-manager</Project>
+  <Overview>This is a drop in replacement for jlesage/nginx-proxy-manager&#xD;
+&#xD;
+This fork includes the OpenResty Crowdsec Bouncer&#xD;
+&#xD;
+Nginx Proxy Manager (NPM) allows adding proxy hosts through a password-protected multi-user WebUI. Add free Let's Encrypt SSL certificates to secure your web services. They are renewed by NPM automatically.&#xD;
+Default login:&#xD;
+admin@example.com&#xD;
+&#xD;
+Password:&#xD;
+changeme</Overview>
+  <Category>Cloud: Security: Network:Web Network:Proxy Network:Other Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:81]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/Nginx-Proxy-Manager-CrowdSec/NginxCrowdsec.png</Icon>
+  <ExtraParams>--memory=1G --no-healthcheck</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1683310999</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>A CrowdSec config and running</Requires>
+  <Config Name="WebUI" Target="81" Default="81" Mode="tcp" Description="WebUiPort" Type="Port" Display="always" Required="true" Mask="false">81</Config>
+  <Config Name="Http Redirection" Target="80" Default="80" Mode="tcp" Description="Port HTTP" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+  <Config Name="Https Redirection" Target="443" Default="443" Mode="tcp" Description="Port for HTTPS" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="Data Config" Target="/data" Default="/mnt/user/appdata/NPMxModSecCrowdsec" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/NPMxModSecCrowdsec</Config>
+  <Config Name="LetsEncrypt" Target="/etc/letsencrypt" Default="/mnt/user/appdata/NPMxModSecCrowdsec/LetsEncrypt" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/NPMxModSecCrowdsec/LetsEncrypt</Config>
+  <Config Name="Crowdsec Bouncer" Target="CROWDSEC_BOUNCER" Default="1|0" Mode="" Description="Enable or not the crowdsec bouncer&#13;&#10;(1:Yes 2:No)" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="Modsec factory RESET" Target="MODSEC_CREATE" Default="0|1" Mode="" Description="Re create the modsec config (Reset)&#13;&#10;Force recreating the default modsecurity config&#13;&#10;(1:Yes 2:No)" Type="Variable" Display="always" Required="true" Mask="false">0</Config>
+  <Config Name="ModSec UI" Target="MODSEC_ADMIN_PANEL" Default="1|0" Mode="" Description="Enable ModSec for the admin panel (Port 81 web interface)&#13;&#10;(1:Yes 2:No)" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="ModSec security" Target="MODSEC_ENABLE" Default="1|0" Mode="" Description="Enable ModSec in the ROOT http {} block (Enabled ModSec for ALL HTTP servers)&#13;&#10;(1:Yes 2:No)" Type="Variable" Display="always" Required="true" Mask="false">1</Config>
+  <Config Name="Debug Logs" Target="OPENRESTY_DEBUG" Default="0|1" Mode="" Description="OpenResty Debug&#13;&#10;(1:Yes 2:No)" Type="Variable" Display="always" Required="true" Mask="false">0</Config>
+  <Config Name="Disable IPv6" Target="DISABLE_IPV6" Default="false|true" Mode="" Description="Disable or not IPV6 support" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="SQLite file" Target="DB_SQLITE_FILE" Default="/data/database.sqlite" Mode="" Description="Change the path or not of the SQLite. If you wish to use it, delete all variable of DataBase *." Type="Variable" Display="always" Required="false" Mask="false">/data/database.sqlite</Config>
+  <Config Name="DataBase IP" Target="DB_MYSQL_HOST" Default="192.168.x.x" Mode="" Description="Your database IP. If you wish to use DataBase, delete the variable for SQLite." Type="Variable" Display="always" Required="false" Mask="false">192.168.x.x</Config>
+  <Config Name="DataBase Port" Target="DB_MYSQL_PORT" Default="3306" Mode="" Description="Your database Port" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="DataBase User" Target="DB_MYSQL_USER" Default="NPMxModSec-CrowdsecUser" Mode="" Description="Your database user" Type="Variable" Display="always" Required="false" Mask="false">NPMxModSec-CrowdsecUser</Config>
+  <Config Name="DataBase Password" Target="DB_MYSQL_PASSWORD" Default="changeme" Mode="" Description="Your database password" Type="Variable" Display="always" Required="false" Mask="true">changeme</Config>
+  <Config Name="DataBase Name" Target="DB_MYSQL_NAME" Default="NPMxModSec-Crowdsec" Mode="" Description="Your database name" Type="Variable" Display="always" Required="false" Mask="false">NPMxModSec-Crowdsec</Config>
+  <Config Name="SSL_CERTS_PATH" Target="SSL_CERTS_PATH" Default="" Mode="" Description=" CA certificate used to communicate with Google for reCAPTCHA validation" Type="Variable" Display="advanced-hide" Required="true" Mask="false">/etc/ssl/certs/GTS_Root_R1.pem</Config>
+</Container>
