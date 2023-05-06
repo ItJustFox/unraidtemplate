@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NginxProxyManager-CrowdSec V3</Name>
+  <Repository>lepresidente/nginx-proxy-manager:v3</Repository>
+  <Registry>https://hub.docker.com/r/lepresidente/nginx-proxy-manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
+  <Project>https://nginxproxymanager.com/</Project>
+  <Overview>This is a drop in replacement for jlesage/nginx-proxy-manager&#xD;
+&#xD;
+This fork includes the OpenResty Crowdsec Bouncer&#xD;
+&#xD;
+Please see the crowdsec_support branch for the changes as&#xD;
+&#xD;
+&#xD;
+Nginx Proxy Manager (NPM) allows adding proxy hosts through a password-protected multi-user WebUI. Add free Let's Encrypt SSL certificates to secure your web services. They are renewed by NPM automatically.&#xD;
+Default login:&#xD;
+admin@example.com&#xD;
+&#xD;
+Password:&#xD;
+changeme</Overview>
+  <Category>Tools:Utilities Other: Network:Web Network:Proxy Network:Management Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8181]</WebUI>
+  <TemplateURL>https://github.com/ItJustFox/unraidtemplate/blob/main/Nginx-Proxy-Manager-CrowdSec/NPM-Crowdsec.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/Nginx-Proxy-Manager-CrowdSec/NginxCrowdsec.png</Icon>
+  <ExtraParams>--memory=1G --no-healthcheck</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1666884876</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>A CrowdSec config and running</Requires>
+  <Config Name="WebUI" Target="8181" Default="8181" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8181</Config>
+  <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="HTTPS Port" Target="4443" Default="4443" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4443</Config>
+  <Config Name="AppData ConfigFiles" Target="/config" Default="/mnt/user/appdata/NginxProxyManager-CrowdSec/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/NginxProxyManager-CrowdSec/</Config>
+  <Config Name="Certifications" Target="/etc/letsencrypt" Default="/mnt/user/appdata/NginxProxyManager-CrowdSec/UnraidData/certifications" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/NginxProxyManager-CrowdSec/UnraidData/certifications</Config>
+  <Config Name="Logs" Target="/var/log" Default="/mnt/user/appdata/NginxProxyManager-CrowdSec/UnraidData/logs" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/NginxProxyManager-CrowdSec/UnraidData/logs</Config>
+  <Config Name="IPV6 Support" Target="DISABLE_IPV" Default="false|true" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="AutoRestart" Target="KEEP_APP_RUNNING" Default="0|1" Mode="" Description="0 = No reboot if crash&#13;&#10;1 = Reboot if crash" Type="Variable" Display="always" Required="true" Mask="false">0</Config>
+  <Config Name="API Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="advanced-hide" Required="false" Mask="false">3005</Config>
+  <Config Name="UserID" Target="USER_ID" Default="0" Mode="" Description="Do not touch that." Type="Variable" Display="advanced" Required="true" Mask="false">0</Config>
+  <Config Name="GroupID" Target="GROUP_ID" Default="0" Mode="" Description="Do not touch that." Type="Variable" Display="advanced" Required="true" Mask="false">0</Config>
+</Container>
