@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>NginxProxyManager-CrowdSec V3</Name>
-  <Repository>lepresidente/nginx-proxy-manager:v3</Repository>
+  <Repository>lepresidente/nginx-proxy-manager:dev</Repository>
   <Registry>https://hub.docker.com/r/lepresidente/nginx-proxy-manager</Registry>
   <Network>bridge</Network>
   <MyIP/>
