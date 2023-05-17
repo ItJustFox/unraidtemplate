@@ -6,8 +6,8 @@
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
-  <Privileged>true</Privileged>
-  <Support>https://forums.unraid.net/topic/120473-support-fantucie-apps/</Support>
+  <Privileged>false</Privileged>
+  <Support>https://wiki.unraid.kalifondation.fr/en/home</Support>
   <Project>https://github.com/pterodactyl</Project>
   <Overview>Pterodactyl&#xAE; is a free, open-source game server management panel built with PHP, React, and Go. Designed with security in mind, Pterodactyl runs all game servers in isolated Docker containers while exposing a beautiful and intuitive UI to end users.&#xD;
 &#xD;
@@ -18,7 +18,7 @@ All the setups requiried is on the support area (Discord or Forum)</Overview>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://avatars.githubusercontent.com/u/16179146?s=200&amp;amp;v=4</Icon>
-  <ExtraParams>--privileged=true --restart=unless-stopped</ExtraParams>
+  <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1645803144</DateInstalled>
@@ -30,7 +30,7 @@ All the setups requiried is on the support area (Discord or Forum)</Overview>
   <Config Name="WingsUID" Target="WINGS_UID" Default="988" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">988</Config>
   <Config Name="WingsGID" Target="WINGS_GID" Default="988" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">988</Config>
   <Config Name="WingsUsername" Target="WINGS_USERNAME" Default="pterodactyl" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">pterodactyl</Config>
-  <Config Name="DeamonsLib" Target="/mnt/user/appdata/pterodactyldeamons/server" Default="/mnt/user/appdata/pterodactyldeamons/server" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyldeamons/server</Config>
+  <Config Name="DeamonsLib" Target="/mnt/user/appdata/pterodactyldeamons/lib/" Default="/mnt/user/appdata/pterodactyldeamons/lib/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyldeamons/server</Config>
   <Config Name="DeamonsLogs" Target="/var/log/pterodactyl/" Default="/mnt/user/appdata/pterodactyldeamons/logs" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyldeamons/logs</Config>
   <Config Name="DeamonsEtc" Target="/etc/pterodactyl/" Default="/mnt/user/appdata/pterodactyldeamons/etc" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/pterodactyldeamons/etc</Config>
   <Config Name="DeamonsLetsenscrypt" Target="/etc/letsencrypt/live/" Default="" Mode="rw" Description="Mount your SSL key.&#13;&#10;If nginx mount your config.&#13;&#10;if reverseproxy, mount the key." Type="Path" Display="always" Required="false" Mask="false"/>
