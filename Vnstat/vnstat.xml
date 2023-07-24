@@ -15,7 +15,7 @@ By default, traffic statistics are stored on a five minute level for the last 48
 &#xD;
 See the official webpage or the GitHub repository for additional details and output examples. An example of the included image output is also available.</Overview>
   <Category>Tools: Network:Other</Category>
-  <WebUI>http://[IP]:8685/</WebUI>
+  <WebUI>http://[IP]:[PORT:8685]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/main/Vnstat/logohtfix.png</Icon>
   <ExtraParams/>
